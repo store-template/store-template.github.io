@@ -1,0 +1,56 @@
+[
+  {
+  "name": "Monstera",
+  "price": "750",
+  "link": "../../product/index2.html",
+  "id": "1"
+  },
+  {
+  "name": "Lavanda",
+  "price": "350",
+  "link": "../../product/index2.html",
+  "id": "2"
+},
+{
+"name": "Chica",
+"price": "450",
+"link": "../../product/index2.html",
+"id": "3"
+},
+{
+"name": "O.V.N.I",
+"price": "1000",
+"link": "../../product/index2.html",
+"id": "4"
+},
+{
+"name": "Piccolo",
+"price": "250",
+"link": "../../product/index2.html",
+"id": "5"
+},
+{
+"name": "Combo",
+"price": "250",
+"link": "../../product/index2.html",
+"id": "6"
+},
+{
+"name": "Grey",
+"price": "150",
+"link": "../../product/index2.html",
+"id": "7"
+},
+{
+"name": "Manos",
+"price": "1350",
+"link": "../../product/index2.html",
+"id": "8"
+},
+{
+"name": "Perlas",
+"price": "650",
+"link": "../../product/index2.html",
+"id": "9"
+}
+]

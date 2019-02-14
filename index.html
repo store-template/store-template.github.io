@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="static/img/general/icons/map-32w.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/general/icons/map-76w.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/img/general/icons/map-120w.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/img/general/icons/map-152w.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/general/icons/map-180w.png">
+    <link rel="stylesheet" type="text/css" href="main/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/libs/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/libs/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="main/css/main.css">
+    <title>Главная страница
+    </title>
+  </head>
+  <body>
+    <div class="preloader" id="preloader"><img class="preloader__object" src="static/img/general/sello-black.svg" alt="tienda-moli"></div>
+    <header class="header" id="page-header">
+      <nav class="nav header__nav">
+        <button class="nav__btn toggle-navigation-btn" type="button" id="toggle-navigation-btn"><span class="hidden-text">Close navigation   </span><span class="toggle-navigation-btn__line"></span></button>
+        <ul class="nav__list" id="mainNav">
+          <li class="nav__list-item"><a class="nav__link" href="#">Productos</a></li>
+          <li class="nav__list-item"><a class="nav__link" href="#">A tu medida</a></li>
+          <li class="nav__list-item"><a class="nav__link" href="#">Contacto</a></li>
+          <li class="nav__list-item"><a class="nav__link" href="#">Manifesto</a></li>
+        </ul>
+      </nav><span class="logo header__logo" id="headerLogo">
+        <svg class="icon logo__icon logo__icon_black" aria-hidden="true">
+          <use xlink:href="static/svg/symbol/sprite.svg#logo-black"></use>
+        </svg>
+        <svg class="icon logo__icon logo__icon_light" aria-hidden="true">
+          <use xlink:href="static/svg/symbol/sprite.svg#logo-white"></use>
+        </svg></span>
+      <div class="shopping-cart header__shopping-cart" id="shopping-cart-icon">
+        <svg class="icon shopping-cart__icon" aria-hidden="true">
+          <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+        </svg><span class="shopping-cart__counter" id="shopping-cart__counter">0</span>
+      </div>
+          <div class="cart cart_hidden header__cart-details" id="cart-details">
+            <div class="cart__wrap">
+              <div class="cart__main">
+                <div class="cart__header">
+                  <p class="cart__title">Mis compras </p>
+                  <button class="cart__close-btn" type="button" id="cart-close-btn">Ocultar</button>
+                </div>
+                <div class="cart__prod-wrap" id="cart-prod">
+                  <div class="cart__prod-line" id="cart-empty-mess">
+                    <p class="cart__title">Is empty</p>
+                  </div>
+                </div>
+                <div class="cart__sum-line" id="cart-sum-line">
+                  <div class="cart__sum-line-wrap">
+                    <div class="cart__subtotal"><span class="cart__subtotal-text">Subtotal </span><span class="cart__subtotal-data">$</span><span class="cart__subtotal-data" id="cart-subtotal-data">0</span></div><a class="cart__next-btn btn" href="#"><span class="btn__text">Finalizar compra</span></a>
+                  </div>
+                  <p class="cart__text">Podrás retirarlo por nuestro punto de venta o calcular el costo de envío en el siguiente paso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <div class="product__router" id="router">
+      <div class="advice" id="advice">
+        <div class="advice__block"><a href="#">
+            <svg class="icon advice__icon" aria-hidden="true">
+              <use xlink:href="static/svg/symbol/sprite.svg#truck"></use>
+            </svg>
+            <p class="advice__text">Recibilo en tu casa o retiralo por nuestra oficina</p></a></div>
+        <div class="advice__block"><a href="#">
+            <svg class="icon advice__icon" aria-hidden="true">
+              <use xlink:href="static/svg/symbol/sprite.svg#credit-card"></use>
+            </svg>
+            <p class="advice__text">Recibilo en tu casa o retiralo por nuestra oficina</p></a></div>
+      </div>
+      <section class="banner">
+        <div class="banner__slider">
+          <div class="banner__slider-item" style="background-image: url(static/img/content/products/grey/grey.jpg);"></div>
+          <div class="banner__slider-item" style="background-image: url(static/img/content/products/combo/combo.jpg);"></div>
+          <div class="banner__slider-item" style="background-image: url(static/img/content/products/chica/chica.jpg);"> </div>
+          <div class="banner__slider-item" style="background-image: url(static/img/content/products/lavanda/lavanda.jpg);"> </div>
+          <div class="banner__slider-item" style="background-image: url(static/img/content/products/piccolo/piccolo.jpg);"> </div>
+        </div>
+        <div class="banner__img" style="background-image: url(static/img/content/products/lavanda/lavanda.jpg);"> </div>
+        <div class="banner__text">
+          <h2 class="banner__title letter-animations">La decoración ideal para renovar tu hogar</h2>
+          <button class="products__btn btn btn_main" type="button"><span class="btn__text">Show more</span></button>
+        </div>
+            <ul class="social banner__social">
+              <li class="social__item"><a class="social__link" href="#">
+                  <svg class="icon social__icon" aria-hidden="true">
+                    <use xlink:href="static/svg/symbol/sprite.svg#instagram"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <svg class="icon social__icon" aria-hidden="true">
+                    <use xlink:href="static/svg/symbol/sprite.svg#facebook-logo"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <svg class="icon social__icon" aria-hidden="true">
+                    <use xlink:href="static/svg/symbol/sprite.svg#pinterest"></use>
+                  </svg></a></li>
+            </ul>
+      </section>
+      <div class="products">
+        <div class="products__wrap" id="products">
+          <h2 class="products__title title letter-animations">Descubri nuestros productos </h2>
+          <div class="products__column products__column_1">
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/monstera/monstera-prev.jpg);"><a class="product__link" href="#" data-item="1"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Monstera</span><a class="product__link" href="#" data-item="1"></a></h3><span class="product__price">$750</span>
+                          <button class="product__btn" type="button" data-item="1">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/lavanda/lavanda-prev.jpg);"><a class="product__link" href="#" data-item="2"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Lavanda</span><a class="product__link" href="#" data-item="2"></a></h3><span class="product__price">$350</span>
+                          <button class="product__btn" type="button" data-item="2">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="products__column products__column_2">
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/chica/chica-prev.jpg);"><a class="product__link" href="#" data-item="3"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Chica</span><a class="product__link" href="#" data-item="3"></a></h3><span class="product__price">$450</span>
+                          <button class="product__btn" type="button" data-item="3">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/o.v.n.i/o.v.n.i-prev.jpg);"><a class="product__link" href="#" data-item="4"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">O.V.N.I</span><a class="product__link" href="#" data-item="4"></a></h3><span class="product__price">$1000</span>
+                          <button class="product__btn" type="button" data-item="4">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="products__column products__column_3">
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/combo/combo-prev.jpg);"><a class="product__link" href="#" data-item="6"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Combo</span><a class="product__link" href="#" data-item="6"></a></h3><span class="product__price">$250</span>
+                          <button class="product__btn" type="button" data-item="6">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/grey/grey-prev.jpg);"><a class="product__link" href="#" data-item="7"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Grey</span><a class="product__link" href="#" data-item="7"></a></h3><span class="product__price">$150</span>
+                          <button class="product__btn" type="button" data-item="7">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="products__column products__column_4">
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/manos/manos-prev.jpg);"><a class="product__link" href="#" data-item="8"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Manos</span><a class="product__link" href="#" data-item="8"></a></h3><span class="product__price">$1350</span>
+                          <button class="product__btn" type="button" data-item="8">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product products__item">
+                    <div class="product__wrap">
+                      <div class="product__pic" style="background-image: url(static/img/content/products/perlas/perlas-prev.jpg);"><a class="product__link" href="#" data-item="9"></a></div>
+                      <div class="product__caption">
+                        <div class="product__caption-wrap">
+                          <h3 class="product__name"><span class="product__name-sub">Cuadros bordados</span><span class="product__name-text">Perlas</span><a class="product__link" href="#" data-item="9"></a></h3><span class="product__price">$650</span>
+                          <button class="product__btn" type="button" data-item="9">Add to cart
+                            <svg class="icon product__btn-icon" aria-hidden="true">
+                              <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="products__item-details" id="product-details">
+            <main class="product-details product">
+              <div class="product__wrapper">
+                <div class="product__img-bar product__main-img" id="product-main-img" style="background-image: url(../static/img/content/products/monstera/monstera-prev.jpg);"></div>
+                <div class="product__text-bar">
+                  <h2 class="product__name"> <span class="product__name-sub">Cuadros </span><span class="product__name-text" id="product-name">Botanical azul</span></h2><span class="product__price" id="product-price">$590</span>
+                  <div class="product__actions">
+                    <ul class="product__quantity">
+                      <li class="product__quantity-item product__quantity-item_active">1</li>
+                      <li class="product__quantity-item">2</li>
+                      <li class="product__quantity-item">3</li>
+                      <li class="product__quantity-item">4</li>
+                      <li class="product__quantity-item">5</li>
+                    </ul>
+                    <button class="product__btn product__btn_dark" type="button" id="add-to-cart-btn">Agregar a carrito
+                      <svg class="icon product__btn-icon" aria-hidden="true">
+                        <use xlink:href="static/svg/symbol/sprite.svg#shopping-cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="product__descr">Cuadro deco trendy con motivo botánico urbano. Marco color natural levemente patinado con lámina impresa.</p>
+                </div>
+                    <ul class="social product__social">
+                      <li class="social__item"><a class="social__link" href="#">
+                          <svg class="icon social__icon" aria-hidden="true">
+                            <use xlink:href="static/svg/symbol/sprite.svg#instagram"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="#">
+                          <svg class="icon social__icon" aria-hidden="true">
+                            <use xlink:href="static/svg/symbol/sprite.svg#facebook-logo"></use>
+                          </svg></a></li>
+                      <li class="social__item"><a class="social__link" href="#">
+                          <svg class="icon social__icon" aria-hidden="true">
+                            <use xlink:href="static/svg/symbol/sprite.svg#pinterest"></use>
+                          </svg></a></li>
+                    </ul>
+              </div>
+            </main>
+          </div>
+        </div>
+        <div class="products__btn-wrap">
+          <button class="products__btn btn btn_main" type="button"><span class="btn__text">Show more</span></button>
+        </div>
+      </div>
+      <section class="video">
+        <div class="video__text-box" id="video-text-box">
+          <h2 class="video__title title"> <span class="video__title-line">Lo hacemos</span><span class="video__title-line">a tu medida</span></h2><a class="video__btn btn btn_main" href="#"><span class="btn__text">Animate</span></a>
+        </div>
+        <div class="video__file-box" id="video-file-box">
+          <video class="video__file" src="static/video/video-desktop.mp4" autoplay loop> </video><img class="video__file-img" alt="text" src="static/img/general/video-poster-mobile.jpg">
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__wrap">
+          <h2 class="subscribe__title title letter-animations">Suscribite al Newsletter</h2>
+          <form class="subscribe__form subscribe-form" id="subscribe-form">
+            <label class="hidden-text" for="email">Enter your email</label>
+            <input class="subscribe-form__input" type="email" id="email" placeholder="Ingresa tu mail">
+            <button class="subscribe-form__btn" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__column footer__column_no-flex">
+          <svg class="icon footer__logo" aria-hidden="true">
+            <use xlink:href="static/svg/symbol/sprite.svg#logo-black"></use>
+          </svg>
+          <p class="footer__text">Una tienda de decoración que te ayuda a transformar tus espacios</p>
+        </div>
+        <div class="footer__column-wrap">
+              <div class="footer__column">
+                <h3 class="footer__column-title">Socciones</h3>
+                <ul class="footer__column-list">
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Productos</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">A tu medida</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Manifiesto</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Contacto</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <h3 class="footer__column-title">Mis compras</h3>
+                <ul class="footer__column-list">
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Atencion al cliente</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Madios de pago</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Preguntas frecuentes</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Envios</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <h3 class="footer__column-title">Legales</h3>
+                <ul class="footer__column-list">
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Terminos y conditiones</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Cambios ydevoluciones</a></li>
+                  <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">Politicas de privacisidas</a></li>
+                </ul>
+              </div>
+          <div class="footer__column">
+            <h3 class="footer__column-title">Seguinos</h3>
+            <ul class="footer__column-list">
+              <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">
+                  <svg class="icon footer__column-list-icon" aria-hidden="true">
+                    <use xlink:href="static/svg/symbol/sprite.svg#instagram"></use>
+                  </svg><span class="footer__column-list-text">lorem</span></a></li>
+              <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">
+                  <svg class="icon footer__column-list-icon" aria-hidden="true">
+                    <use xlink:href="static/svg/symbol/sprite.svg#facebook-logo"></use>
+                  </svg><span class="footer__column-list-text">lorem</span></a></li>
+              <li class="footer__column-list-item"> <a class="footer__column-list-link" href="#">
+                  <svg class="icon footer__column-list-icon" aria-hidden="true">
+                    <use xlink:href="static/svg/symbol/sprite.svg#pinterest"></use>
+                  </svg><span class="footer__column-list-text">lorem</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js">      </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
